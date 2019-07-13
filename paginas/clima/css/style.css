@@ -1,0 +1,223 @@
+* {
+  margin: 0!important
+}
+.fondo1 {
+  background: linear-gradient(90deg,rgba(82,196,223,.5),rgba(173,63,193,.5)), url(../img/2.jpg);
+  -webkit-background-size:cover;
+  background-size:cover;
+  width: 100%;
+  height: 400px;
+}
+
+/*texto expandido*/
+h1
+{
+	padding-top:14%;
+	font-size: 80px;
+	text-transform:uppercase;
+  text-align: center;
+  font-family:sans-serif;
+}
+h1 span
+{
+	display: inline-flex;
+	color: #1474B3;
+}
+h1 span:nth-child(even)
+{
+	overflow: hidden;
+	letter-spacing: -1em;
+	transition: ease-in-out 0.5s;
+	color: #fff;
+	border-bottom: 8px solid  #FF0080;
+}
+h1:hover span:nth-child(even)
+{
+	letter-spacing: 0;
+}
+h1:hover span:nth-child(2),
+h1 span:nth-child(8)
+{
+	transition-delay: 0s;
+}
+h1:hover span:nth-child(4),
+h1 span:nth-child(6)
+{
+	transition-delay: 0.5s;
+}
+h1:hover span:nth-child(6),
+h1 span:nth-child(4)
+{
+	transition-delay: 1s;
+}
+h1:hover span:nth-child(8),
+h1 span:nth-child(2)
+{
+	transition-delay: 1.5s;
+}
+/*fondo del clima*/
+.fondoclima {
+  background: linear-gradient(90deg,rgba(242,248,185,.6),rgba(131,222,178,.6),rgba(29,159,125,.6)), url(../img/fondoclima.jpg);
+  -webkit-background-size:cover;
+  background-size:cover;
+  width: 100%;
+  height: 570px;
+
+}
+.fondoclima h1 {
+    color:#202532;
+    font-size: 25px;
+    text-shadow: .7px .7px .7px #000;
+}
+input[type="text"] {
+
+  	border: none;
+  	border-bottom: 2px solid #fff;
+  	background: rgba(242,248,185,.6  );
+  	outline: none;
+  	height: 40px;
+  	color: #202532;
+  	font-size: 19px;
+}
+.ShowWeatherForcast {
+  font-size: 28px;
+  padding-top: 10%;
+}
+/*boton*/
+a
+{
+    position: absolute;
+    padding: 15px 30px;
+    top:110%;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+a span
+{
+    position: absolute;
+    display: block;
+    background: #1D2A54;
+}
+a span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    width: 2px;
+    height: 100%;
+}
+a:hover span:nth-child(1)
+{
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+a span:nth-child(4)
+{
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+    width: 2px;
+    height: 100%;
+}
+a:hover span:nth-child(4)
+{
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+a span:nth-child(2)
+{
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 2px;
+}
+a:hover span:nth-child(2)
+{
+    transform: translateX(100%);
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+a span:nth-child(5)
+{
+    bottom: 0;
+    left: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: 2px;
+}
+a:hover span:nth-child(5)
+{
+    transform: translateX(-100%);
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+a span:nth-child(3)
+{
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    width: 2px;
+    height: 100%;
+}
+a:hover span:nth-child(3)
+{
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+}
+a span:nth-child(6)
+{
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 2px;
+    height: 100%;
+}
+a:hover span:nth-child(6)
+{
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+}
+/*pie de pagina*/
+.fondopiepag {
+  background: #2b3442;
+  width: 100%;
+  height: 150px;
+  padding: 1%;
+}
+.fondopiepag p {
+  color:#e2eeff;
+  letter-spacing: 2px;
+  font-family: "AvenirNextLTPro-Medium", "Helvetica Neue", Helvetica;
+  font-size: 25px;
+  text-transform: capitalize;
+
+}
+.fondopiepag h2 {
+  color: #6597cd;
+  font-size: 20px;
+  padding-left: 23%;
+  text-transform: capitalize;
+}
+.fondopiepag2 {
+  background: #202532;
+  width: 100%;
+  height: 100px;
+  border-top: solid 1px #A4b3CD;
+  padding:18PX;
+}
+.fondopiepag2 p {
+  color:#6597cd;
+  text-align: right;
+  padding: 13px;
+  font-size: 22px;
+  font-family: sans-serif;
+  text-transform:capitalize;
+}
